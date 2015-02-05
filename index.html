@@ -3,13 +3,279 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Untitled Document</title>
+<title>:: CAP OS ::</title>
+
+<!--==================================================
+					CSS
+================================================== -->
+
+<!-- CORE CSS FRAMEWORK 
++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!--RESPOND.JS 
++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+
+<script src="assets/js/respond.min.js"></script>
+
+<!-- CORE CSS THEME  
++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" type="text/css" href="assets/css/cap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/my-gateway-menu.css">
+<!---->
+<link rel="stylesheet" type="text/css" href="assets/css/cvt.css">
+<link rel="stylesheet" type="text/css" href="assets/css/cap-widgets.css">
+<link rel="stylesheet" type="text/css" href="assets/css/cap-widgets-hall.css">
+<link rel="stylesheet" type="text/css" href="assets/css/cap-widgets-result.css">
+<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+<!---->
+<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/pivot.css">
+
+<link rel="stylesheet" type="text/css" href="assets/css/icon-hover-effects.css" />
+<!--==================================================
+					FONTS
+================================================== -->
+
+<link rel="stylesheet" type="text/css" href="assets/font/DINCondensedBold/dincondensedbold.css">
+
+<!--==================================================
+					ANGULAR JS
+================================================== -->
+<script src="assets/js/angular/angular.min.js"></script>
+
 </head>
 
 <body>
+<!--================ NAVBAR ========================--> 
+<!-- NAVABR -->
+<div id="r_nav-container">
+	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a href="index.html" class="navbar-brand" >
+				<div class="brand-icon"><span class="fa fa-dot-circle-o"></span></div>
+				<div class="brand-text">Acquisition Gateway</div>
+				</a> </div>
+			<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<!--<li class=" hidden-sm"><a href="#">Contact Us</a></li>-->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about-us" data-toggle="modal">About Us</a></li>
+					<li><a href="#explore" data-toggle="modal">Explore</a></li>
+					<li><a href="mailto:email@email.com"> <span class="nav-link-icon"><span class="fa fa-envelope"></span></span> <span class="nav-link-text"></span> </a> </li>
+					<li class="dropdown hidden-xs"> <a data-toggle="dropdown" class="dropdown-toggle"> <span class="nav-link-icon"><span class="fa fa-question-circle"></span></span> <span class="nav-link-text">Help<span class="caret"></span></span></a>
+						<ul style="min-width:450px; opacity:1; margin-right:10px;" role="menu" class="dropdown-menu">
+							<li>
+								<div class=" panel-body">
+									<h3 class="DINCondensedBold">How Can We Help?</h3>
+									<p>Are you having trouble? We want to help you succeed. Whether it is a log-in issue, problems finding what you need, or a concern about the accuracy or usefulness of an item, please let us know. If it affects you, we care.</p>
+									<p>Email us at:</p>
+									<p><a href="mailto:hallways_site_manager@gsa.gov" class="btn btn-block btn-warning">hallways_site_manager@gsa.gov</a></p>
+									<p>Thank you for your support. We aim to respond to every message within one working day. </p>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="hidden-sm hidden-md hidden-lg"> <a href="mailto:hallways_site_manager@gsa.gov">
+						<div class="nav-link-icon"><span class="fa fa-question-circle"></span></div>
+						<div class="nav-link-text">Help</div>
+						</a> </li>
+					<li> <a href="default-IN.html">
+						<div class="nav-link-text">Sign Out &nbsp;</div>
+						<div class="nav-link-icon"><span class="fa fa-sign-out"></span></div>
+						</a> </li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse --> 
+		</div>
+		<!-- /.container-fluid --> 
+	</nav>
+</div>
+<!-- /END NAVABR --> 
+<!--================ HEADER ========================--> 
 <div class="container">
 <h1>Title</h1>
 </div>
+
+
+
+
+<!--================ SCRIPTS ========================--> 
+<script src="assets/vendor/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap.min.js"></script> 
+<script src="assets/bs/js/cap-os.js"></script> 
+<!-- MODERENIZER 2.8.3 
++++++++++++++++++++++++++++++++++++++++++++++++++--> 
+<script src="assets/js/modernizr.2.8.3.js"></script>
+<noscript>
+</noscript>
+<script src="assets/js/classie.js"></script>
+<noscript>
+</noscript>
+<script src="assets/js/cap-os.js"></script>
+<noscript>
+</noscript>
+<!-- APP RELATED SCRIPTS   
+------------------------------------------------------------------------------------------> 
+<!--  modal to fire on start  --> 
+<!--<script>
+    $('#click-me').modal('show');
+	 $('#welcomeModal').modal('show');
+</script>-->
+<noscript>
+</noscript>
+<!-- modal scripts --> 
+<script>
+   	$("#file-3").fileinput({
+		browseClass: "btn btn-warning  ",
+		showUpload: false,
+		showRemove: false,
+		showCaption: false,
+		
+		fileType: "any"
+	});
+    $(".btn-warning").on('click', function() {
+        if ($('#file-3').attr('disabled')) {
+            $('#file-3').fileinput('enable');
+        } else {
+            $('#file-3').fileinput('disable');
+        }
+    });
+
+	</script>
+<noscript>
+</noscript>
+<!-- LIST VIEW TOGGLE --> 
+<script type="text/javascript">
+$(document).ready(function () {    
+var elem=$('#cvt ul');      
+	$('#viewcontrols a').on('click',function(e) {
+		if ($(this).hasClass('gridview')) {
+			elem.fadeOut(400, function () {
+				$('#cvt ul').removeClass('list').addClass('grid');
+				$('#viewcontrols').removeClass('view-controls-list').addClass('view-controls-grid');
+				$('#viewcontrols .gridview').addClass('active');
+				$('#viewcontrols .listview').removeClass('active');
+				elem.fadeIn(700);
+			});						
+		}
+		else if($(this).hasClass('listview')) {
+			elem.fadeOut(400, function () {
+				$('#cvt ul').removeClass('grid').addClass('list');
+				$('#viewcontrols').removeClass('view-controls-grid').addClass('view-controls-list');
+				$('#viewcontrols .gridview').removeClass('active');
+				$('#viewcontrols .listview').addClass('active');
+				elem.fadeIn(700);
+			});									
+		}
+	});
+});
+</script>
+<noscript>
+</noscript>
+
+<!-- FILE INPUT --> 
+<script src="assets/js/fileinput.js"></script>
+<noscript>
+</noscript>
+
+<!-- COLLAPSING DESCRIPTION SCRIPT --> 
+<script src="assets/js/jquery.collapser.js"></script>
+<noscript>
+</noscript>
+<script>
+$(document).ready(function(){
+	$('.p1').collapser({
+		mode: 'chars',
+		truncate: 300
+	});
+	
+	$('.p2').collapser({
+		mode: 'block',
+		showText: 'Show paragraph',
+		hideText: 'Hide paragraph',
+		changeText: 1
+	});
+	
+	$('.p3 li').collapser({
+		mode: 'words',
+		truncate: 2,
+	});
+	
+});
+
+</script>
+<noscript>
+</noscript>
+
+<!-- PIVOT --> 
+<script src="assets/js/svgcheckbx.js"></script> 
+<script>
+function showMe (box) {
+
+    var chboxs = document.getElementsByName("fee");
+	
+    var vis = "none";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "block";
+            break;
+        }
+    }
+    document.getElementById(box).style.display = vis;
+
+
+}
+//document.getElementById('solution1' || 'solution2' || 'solution3'  ).onchange = function() {
+//    document.getElementById('fee').disabled = !this.checked;
+//	document.getElementById('agency').disabled = !this.checked;
+//};
+
+</script> 
+<script>
+$(function() {
+    $('#checkboxOne, #checkboxTwo, #checkboxThree').click(function() {
+        var cb1 = $('#checkboxOne').is(':checked');
+        var cb2 = $('#checkboxTwo').is(':checked');
+		var cb3 = $('#checkboxThree').is(':checked');
+       
+        $('#fee, #agency').prop('disabled', !(cb1 || cb2 || cb3));
+          
+    });
+});
+$("#fee").keyup(function() {
+    $("#div1").show();
+
+});
+$("#agency").keyup(function() {
+    $("#div1").show();
+
+});
+</script>
+
+<!-- expand all button -->
+<script>
+ $('.closeall').click(function(){
+ $('.panel-collapse.in')
+ .collapse('hide');
+});
+$('.openall').click(function(){
+  $('.panel-collapse:not(".in")')
+    .collapse('show');
+});
+</script>
+
+
 </body>
 </html>
